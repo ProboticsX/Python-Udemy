@@ -25,4 +25,4 @@ def step_impl(context, title):
     page = BlogPage(context.browser)
     posts = page.posts()
     post = [p for p in posts if p.text==title]
-    assert len(posts)>0
+    assert len(post)>0
